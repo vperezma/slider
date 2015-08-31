@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+figure {
+	position: absolute;
+	opacity: 0;
+	transition: 2s;
+}
+
+.slideshow {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 400px;
+}
+
+.slide1{
+	background: url(../img/barca.png) no-repeat center center;
+	background-size: cover;
+	height: 400px;
+}
+
+.slide2{
+	background: url(../img/soccerField.JPG) no-repeat center center;
+	background-size: cover;
+	height: 400px;
+}
+
+figure.show {
+	opacity: 1;
+	position: static;
+	transition: 2s;
+}
+
+.next, .prev {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	font-size: 2em;
+	margin-top: -.75em;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+}
+
+.next {
+	right: 10px;
+	padding: 10px 5px 15px 10px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px; 
+}
+.prev {
+	left: 10px;
+	padding: 10px 5px 15px 10px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px; 
+}
+
+.next:hover, .prev:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
